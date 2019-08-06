@@ -1,0 +1,18 @@
+create table Employee2(
+Employee_id int,
+Employee_Name varchar(25),
+Dept_id int,
+Age int,
+Phonenumber int,
+addre_id  int,
+district_name varchar(25),
+Emp_state varchar(25),
+pincode int,
+Designation varchar(25),
+Skills varchar(25),
+Salary int,
+Modifieddate datetime,
+primary key(Employee_id),
+foreign key(Dept_id) references Department(Dept_id),
+foreign key(addre_id) references Addres1(addre_id),
+);							
